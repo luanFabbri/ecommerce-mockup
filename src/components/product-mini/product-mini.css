@@ -12,6 +12,13 @@
     height: 186px;
     object-fit: contain;
     margin-right: 16px;
+    cursor: pointer;
+    border-radius: 15px;
+    transition: box-shadow 0.3s ease; /* Transição suave para o efeito de glow */
+}
+
+.product-image:hover {
+    box-shadow: 0 0 5px rgba(0, 26, 102, 0.7); /* Efeito de glow azul */
 }
 
 .product-details {
@@ -22,10 +29,25 @@
 .product-title {
     font-size: 20px;
     margin: 0;
+    cursor: pointer;
 }
 
 .product-price {
     font-size: 16px;
     color: gray;
     margin-top: 8px;
+}
+
+.add-to-cart-button {
+    background-color: #000f40;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+    background-color: #001a66; /* Cor mais clara ao passar o mouse */
 }

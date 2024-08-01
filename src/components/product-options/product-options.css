@@ -1,0 +1,24 @@
+.general-button {
+    background-color: #000f40;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.general-button:hover {
+    background-color: #001a66; /* Cor mais clara ao passar o mouse */
+}
+
+.product-options {
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin: 16px auto; /* Margem automática para centralizar */
+    padding: 16px; /* Opcional: adicionar espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Opcional: adicionar sombra para destaque */
+    border-radius: 8px; /* Opcional: adicionar cantos arredondados */
+}

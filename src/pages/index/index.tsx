@@ -1,6 +1,5 @@
 // index.tsx
 import { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import UpperMenu from "../../components/upper-menu/upper-menu";
 import { fetchCategories, fetchItems } from "../../services/APIs/api-config";
 import {

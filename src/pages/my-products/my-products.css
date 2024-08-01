@@ -1,0 +1,14 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 16px;
+}
+
+.product-options {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: calc(33.333% - 32px); /* Três produtos por linha */
+    box-sizing: border-box;
+}

@@ -1,0 +1,67 @@
+.product-big-wrapper {
+    display: flex;
+    width: 90%;
+    margin: 20px auto 0 auto; /* Adiciona margem superior de 20px */
+    gap: 8px; /* Espaço entre o contêiner principal e a nova caixa */
+}
+
+.product-big-container {
+    display: flex;
+    flex: 1; /* Faz com que o contêiner principal ocupe o espaço disponível */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding-bottom: 124px;
+}
+
+.product-big-image {
+    width: 340px;
+    height: 340px;
+    object-fit: contain;
+    border-radius: 8px; /* Adiciona border-radius à imagem para consistência com a caixa */
+    margin-left: 8px;
+}
+
+.product-big-details {
+    padding: 16px;
+    flex: 1; /* Faz com que a área de detalhes ocupe o restante do espaço disponível */
+}
+
+.product-big-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.product-big-price {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-big-description {
+    margin: 10px 0;
+}
+
+.product-big-category {
+    margin: 10px 0;
+}
+
+.product-big-button {
+    background-color: #000f40;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.product-big-extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    background-color: #f4f4f4; /* Cor de fundo opcional */
+    margin-left: 8px; /* Espaço entre o contêiner principal e a nova caixa */
+    padding: 16px;
+}

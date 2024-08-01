@@ -1,22 +1,22 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { ProductListInterface } from "../../utils/products-config";
+import ProductBig from "../../components/product-big/product-big";
+import UpperMenu from "../../components/upper-menu/upper-menu";
 
 const CheckProduct: React.FC = () => {
   const location = useLocation();
-  const product: ProductListInterface = location.state.product;
+  const product = location.state?.product;
+
+  if (!product) {
+    return <div>Produto não encontrado</div>;
+  }
 
   return (
     <div>
-      <h1>{product.title}</h1>
-      <img
-        src="src/assets/images/Fusca.jpg"
-        alt={product.title}
-        style={{ width: "256px", height: "256px", objectFit: "contain" }}
-      />
-      <p>{product.description}</p>
-      <p>Price: R${product.price.toFixed(2)}</p>
-      <p>Category: {product.category}</p>
+      <UpperMenu />
+      <div className="check-product-container">
+        <ProductBig product={product} />
+      </div>
     </div>
   );
 };
