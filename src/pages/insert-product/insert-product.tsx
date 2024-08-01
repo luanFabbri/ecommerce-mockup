@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom"; // Importando useLocation
 import UpperMenu from "../../components/upper-menu/upper-menu";
 import {
   fetchCategories,
@@ -15,11 +15,10 @@ interface CategoryInterface {
   ownerId: number;
 }
 
-interface InsertProductProps {
-  productOptions?: ProductListInterface;
-}
+const InsertProduct: React.FC = () => {
+  const location = useLocation(); // Usando useLocation para obter estado
+  const productOptions = location.state?.productOptions as ProductListInterface;
 
-const InsertProduct: React.FC<InsertProductProps> = ({ productOptions }) => {
   const [productName, setProductName] = useState(productOptions?.title || "");
   const [productDescription, setProductDescription] = useState(
     productOptions?.description || ""

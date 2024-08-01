@@ -1,0 +1,21 @@
+/* category-options.css */
+.category-options {
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+}
+
+.category-title {
+    font-weight: bold;
+}
+
+.category-description {
+    margin-bottom: 10px;
+}
+
+.category-buttons {
+    display: flex;
+    gap: 8px;
+}

@@ -6,6 +6,7 @@ import MyCategories from "./pages/my-categories/my-categories";
 import MyProducts from "./pages/my-products/my-products";
 import CheckProduct from "./pages/check-product/check-product";
 import InsertProduct from "./pages/insert-product/insert-product";
+import InsertCategory from "./pages/insert-category/insert-category";
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Route path="/my-categories" element={<MyCategories />} />
         <Route path="/check-product" element={<CheckProduct />} />
         <Route path="/insert-product" element={<InsertProduct />} />
-        {/* <Route path="/insert-categories" element={<CheckProduct />} /> */}
+        <Route path="/insert-category" element={<InsertCategory />} />
       </Routes>
     </BrowserRouter>
   );

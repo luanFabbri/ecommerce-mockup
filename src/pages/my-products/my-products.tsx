@@ -70,13 +70,9 @@ function MyProducts() {
   return (
     <div>
       <UpperMenu />
-      <div>
-        <h2 style={{ marginLeft: 16 }}>Meus Produtos</h2>
-        <button
-          className="general-button"
-          style={{ marginLeft: 16 }}
-          onClick={handleInsertItem}
-        >
+      <div className="categories-container">
+        <h2>Meus Produtos</h2>
+        <button className="general-button" onClick={handleInsertItem}>
           Inserir item
         </button>
         <div className="products-container">

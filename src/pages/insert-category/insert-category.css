@@ -1,0 +1,33 @@
+.insert-category-input {
+    width: 50%;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    background-color: white;
+    color: black;
+    padding-left: 10px;
+}
+
+.insert-category-input-area {
+    margin-bottom: 16px;
+}
+
+.common-button {
+    background-color: #000f40;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.insert-category-select {
+    width: 51%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    color: black;
+    border-radius: 4px 0 0 4px;
+    background-color: white;
+    height: 30px;
+}

@@ -1,0 +1,29 @@
+/* Estilo para o botão de inserir categoria */
+.general-button {
+    background-color: #000f40;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 16px 0; /* Espaçamento acima e abaixo do botão */
+}
+
+.general-button:hover {
+    background-color: #001a66;
+}
+
+/* Container principal para centralizar */
+.categories-container {
+    text-align: left;
+    margin: 20px auto;
+    max-width: 90%; /* Limita a largura máxima para centralizar */
+}
+
+/* Lista de opções de categoria */
+.category-options-list {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Centraliza os elementos da lista */
+}
