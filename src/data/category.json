@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Calçado",
+    "description": "Vestimenta para os pés.",
+    "owner-id": 1
+  },
+  {
+    "title": "Aparelho Eletrônico",
+    "description": "Aparelho que utiliza bateria ou pilha para executar suas funções principais.",
+    "owner-id": 1
+  },
+  {
+    "title": "Automóvel",
+    "description": "Veículo de transporte pessoal.",
+    "owner-id": 1
+  },
+  {
+    "title": "Calçado",
+    "description": "Vestimenta para os pés.",
+    "owner-id": 2
+  },
+  {
+    "title": "Aparelho Eletrônico",
+    "description": "Aparelho que utiliza bateria ou pilha para executar suas funções principais.",
+    "owner-id": 2
+  },
+  {
+    "title": "Automóvel",
+    "description": "Veículo de transporte pessoal.",
+    "owner-id": 2
+  },
+  {
+    "title": "Calçado",
+    "description": "Vestimenta para os pés.",
+    "owner-id": 3
+  },
+  {
+    "title": "Aparelho Eletrônico",
+    "description": "Aparelho que utiliza bateria ou pilha para executar suas funções principais.",
+    "owner-id": 3
+  },
+  {
+    "title": "Automóvel",
+    "description": "Veículo de transporte pessoal.",
+    "owner-id": 3
+  }
+]

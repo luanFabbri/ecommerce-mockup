@@ -1,0 +1,31 @@
+.product-mini {
+    display: flex;
+    width: 70%;
+    margin: 16px auto; /* Margem automática para centralizar */
+    padding: 16px; /* Opcional: adicionar espaçamento interno */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Opcional: adicionar sombra para destaque */
+    border-radius: 8px; /* Opcional: adicionar cantos arredondados */
+}
+
+.product-image {
+    width: 186px;
+    height: 186px;
+    object-fit: contain;
+    margin-right: 16px;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-title {
+    font-size: 20px;
+    margin: 0;
+}
+
+.product-price {
+    font-size: 16px;
+    color: gray;
+    margin-top: 8px;
+}

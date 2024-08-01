@@ -1,0 +1,65 @@
+[
+  {
+    "title": "Tênis",
+    "description": "Tênis novo, ideal para corridas e atividades físicas. Conforto e estilo garantidos.",
+    "price": 100.0,
+    "category-id": 1,
+    "owner-id": 1
+  },
+  {
+    "title": "Câmera",
+    "description": "Câmera nova com alta resolução e várias funcionalidades. Perfeita para fotógrafos amadores e profissionais.",
+    "price": 500.0,
+    "category-id": 2,
+    "owner-id": 1
+  },
+  {
+    "title": "Carro",
+    "description": "Carro seminovo em ótimo estado, com baixo quilometragem e todos os acessórios incluídos.",
+    "price": 20000.0,
+    "category-id": 3,
+    "owner-id": 1
+  },
+  {
+    "title": "Tênis",
+    "description": "Tênis novo, ideal para corridas e atividades físicas. Conforto e estilo garantidos.",
+    "price": 100.0,
+    "category-id": 1,
+    "owner-id": 2
+  },
+  {
+    "title": "Câmera",
+    "description": "Câmera nova com alta resolução e várias funcionalidades. Perfeita para fotógrafos amadores e profissionais.",
+    "price": 500.0,
+    "category-id": 2,
+    "owner-id": 2
+  },
+  {
+    "title": "Carro",
+    "description": "Carro seminovo em ótimo estado, com baixo quilometragem e todos os acessórios incluídos.",
+    "price": 20000.0,
+    "category-id": 3,
+    "owner-id": 2
+  },
+  {
+    "title": "Tênis",
+    "description": "Tênis novo, ideal para corridas e atividades físicas. Conforto e estilo garantidos.",
+    "price": 100.0,
+    "category-id": 1,
+    "owner-id": 3
+  },
+  {
+    "title": "Câmera",
+    "description": "Câmera nova com alta resolução e várias funcionalidades. Perfeita para fotógrafos amadores e profissionais.",
+    "price": 500.0,
+    "category-id": 2,
+    "owner-id": 3
+  },
+  {
+    "title": "Carro",
+    "description": "Carro seminovo em ótimo estado, com baixo quilometragem e todos os acessórios incluídos.",
+    "price": 20000.0,
+    "category-id": 3,
+    "owner-id": 3
+  }
+]
