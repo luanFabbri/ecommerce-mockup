@@ -6,6 +6,7 @@ export interface ProductListInterface {
   description: string;
   price: number;
   category: string;
+  categoryDescription: string;
 }
 
 export const productsConfiguration = (
@@ -24,6 +25,15 @@ export const productsConfiguration = (
     // Retorna o título da categoria se encontrada, caso contrário retorna "Desconhecida"
     return category ? category.title : "Desconhecida";
   };
+  const findCategoryDescription = (
+    itemOwnerId: number,
+    itemCategoryId: number
+  ): string => {
+    const category = categories.find(
+      (cat) => cat.ownerId === itemOwnerId && cat.id === itemCategoryId
+    );
+    return category ? category.description : "Desconhecida";
+  };
 
   // Mapeia os itens para a nova interface e adiciona a categoria correspondente
   const products: ProductListInterface[] = items.map((item) => ({
@@ -34,6 +44,7 @@ export const productsConfiguration = (
     ownerId: item.ownerId,
     categoryId: item.categoryId,
     category: findCategoryTitle(item.ownerId, item.categoryId),
+    categoryDescription: findCategoryDescription(item.ownerId, item.categoryId),
   }));
 
   return products;

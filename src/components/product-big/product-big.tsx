@@ -2,6 +2,8 @@ import React from "react";
 import "./product-big.css";
 import { ProductListInterface } from "../../utils/products-config";
 import { getTomorrowDate } from "../../utils/getTomorrowDate";
+import { toReal } from "../../utils/toReal";
+import { getProductImage } from "../../utils/getProductImage";
 
 interface ProductBigProps {
   product: ProductListInterface;
@@ -12,20 +14,23 @@ const ProductBig: React.FC<ProductBigProps> = ({ product }) => {
     <div className="product-big-wrapper">
       <div className="product-big-container">
         <img
-          src="src/assets/images/Sapato.jpg"
+          src={getProductImage(product.title)}
           alt={product.title}
           className="product-big-image"
         />
         <div className="product-big-details">
           <h2 className="product-big-title">{product.title}</h2>
-          <p className="product-big-category">Categoria: {product.category}</p>
-          <p className="product-big-price">R${product.price.toFixed(2)}</p>
+          <div>⭐⭐⭐⭐⭐</div>
+          <p className="product-big-category">
+            Categoria: {product.category} - {product.categoryDescription}
+          </p>
+          <p className="product-big-price">{toReal(product.price)}</p>
           <p className="product-big-description">{product.description}</p>
         </div>
       </div>
       <div className="product-big-extra">
         <div style={{ margin: 8 }}>
-          <div>Produto novo: R${product.price.toFixed(2)}</div>
+          <div>Produto novo: {toReal(product.price)}</div>
           <div>Entrega: {getTomorrowDate()}</div>
         </div>
 

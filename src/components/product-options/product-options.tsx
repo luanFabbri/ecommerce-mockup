@@ -2,6 +2,8 @@ import React from "react";
 import "./product-options.css";
 import { ProductListInterface } from "../../utils/products-config";
 import { useNavigate } from "react-router-dom";
+import { getProductImage } from "../../utils/getProductImage";
+import { toReal } from "../../utils/toReal";
 
 interface ProductOptionsProps {
   product: ProductListInterface;
@@ -28,7 +30,7 @@ const ProductOptions: React.FC<ProductOptionsProps> = ({
   return (
     <div className="product-options">
       <img
-        src="src/assets/images/Fusca.jpg"
+        src={getProductImage(product.title)}
         alt={product.title}
         className="product-image"
         onClick={handleProductClick}
@@ -37,7 +39,7 @@ const ProductOptions: React.FC<ProductOptionsProps> = ({
         <h2 className="product-title" onClick={handleProductClick}>
           {product.title}
         </h2>
-        <p className="product-price">R${product.price.toFixed(2)}</p>
+        <p className="product-price">{toReal(product.price)}</p>
         <button className="general-button" onClick={onEdit}>
           Alterar item
         </button>

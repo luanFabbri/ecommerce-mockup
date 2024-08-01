@@ -2,6 +2,8 @@ import React from "react";
 import "./product-mini.css";
 import { ProductListInterface } from "../../utils/products-config";
 import { useNavigate } from "react-router-dom";
+import { toReal } from "../../utils/toReal";
+import { getProductImage } from "../../utils/getProductImage";
 
 interface ProductMiniProps {
   product: ProductListInterface;
@@ -22,7 +24,7 @@ const ProductMini: React.FC<ProductMiniProps> = ({ product }) => {
   return (
     <div className="product-mini">
       <img
-        src="src/assets/images/Fusca.jpg"
+        src={getProductImage(product.title)}
         alt={product.title}
         className="product-image"
         onClick={handleProductClick}
@@ -31,7 +33,8 @@ const ProductMini: React.FC<ProductMiniProps> = ({ product }) => {
         <h2 className="product-title" onClick={handleProductClick}>
           {product.title}
         </h2>
-        <p className="product-price">R${product.price.toFixed(2)}</p>
+        <div>⭐⭐⭐⭐⭐</div>
+        <p className="product-price">{toReal(product.price)}</p>
         <button className="add-to-cart-button" onClick={handleAddToCart}>
           Adicionar ao carrinho
         </button>
