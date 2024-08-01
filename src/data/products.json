@@ -1,65 +1,74 @@
 [
   {
+    "id": 1,
     "title": "Tênis",
     "description": "Tênis novo, ideal para corridas e atividades físicas. Conforto e estilo garantidos.",
-    "price": 100.0,
-    "category-id": 1,
-    "owner-id": 1
+    "price": 100,
+    "categoryId": 1,
+    "ownerId": 1
   },
   {
+    "id": 2,
     "title": "Câmera",
-    "description": "Câmera nova com alta resolução e várias funcionalidades. Perfeita para fotógrafos amadores e profissionais.",
-    "price": 500.0,
-    "category-id": 2,
-    "owner-id": 1
+    "description": "Câmera nova com alta resolução e várias funcionalidades. Perfeita para fotógrafos amadores e profissionais. Indispensável para começar seu negócio como fotógrafo!",
+    "price": 500,
+    "categoryId": 2,
+    "ownerId": 1
   },
   {
+    "id": 3,
     "title": "Carro",
     "description": "Carro seminovo em ótimo estado, com baixo quilometragem e todos os acessórios incluídos.",
-    "price": 20000.0,
-    "category-id": 3,
-    "owner-id": 1
+    "price": 20000,
+    "categoryId": 3,
+    "ownerId": 1
   },
   {
-    "title": "Tênis",
-    "description": "Tênis novo, ideal para corridas e atividades físicas. Conforto e estilo garantidos.",
-    "price": 100.0,
-    "category-id": 1,
-    "owner-id": 2
+    "id": 4,
+    "title": "Sapato",
+    "description": "Sapato novo, ideal para o ambiente corporativo. Conforto e estilo garantidos.",
+    "price": 100,
+    "categoryId": 1,
+    "ownerId": 2
   },
   {
-    "title": "Câmera",
-    "description": "Câmera nova com alta resolução e várias funcionalidades. Perfeita para fotógrafos amadores e profissionais.",
-    "price": 500.0,
-    "category-id": 2,
-    "owner-id": 2
+    "id": 5,
+    "title": "Bola",
+    "description": "Projetada para oferecer desempenho e durabilidade excepcionais em todos os tipos de campo.",
+    "price": 500,
+    "categoryId": 2,
+    "ownerId": 2
   },
   {
-    "title": "Carro",
-    "description": "Carro seminovo em ótimo estado, com baixo quilometragem e todos os acessórios incluídos.",
-    "price": 20000.0,
-    "category-id": 3,
-    "owner-id": 2
+    "id": 6,
+    "title": "Mochila",
+    "description": "Companheira perfeita para suas atividades diárias, oferecendo estilo, conforto e funcionalidade.",
+    "price": 20000,
+    "categoryId": 3,
+    "ownerId": 2
   },
   {
-    "title": "Tênis",
-    "description": "Tênis novo, ideal para corridas e atividades físicas. Conforto e estilo garantidos.",
-    "price": 100.0,
-    "category-id": 1,
-    "owner-id": 3
+    "id": 7,
+    "title": "Headset",
+    "description": "Projetado para proporcionar um som imersivo e conforto durante longas sessões de jogo.",
+    "price": 100,
+    "categoryId": 1,
+    "ownerId": 3
   },
   {
-    "title": "Câmera",
-    "description": "Câmera nova com alta resolução e várias funcionalidades. Perfeita para fotógrafos amadores e profissionais.",
-    "price": 500.0,
-    "category-id": 2,
-    "owner-id": 3
+    "id": 8,
+    "title": "Martelo",
+    "description": "Ferramenta essencial para qualquer caixa de ferramentas, seja para uso doméstico ou profissional.",
+    "price": 500,
+    "categoryId": 2,
+    "ownerId": 3
   },
   {
-    "title": "Carro",
-    "description": "Carro seminovo em ótimo estado, com baixo quilometragem e todos os acessórios incluídos.",
-    "price": 20000.0,
-    "category-id": 3,
-    "owner-id": 3
+    "id": 9,
+    "title": "Caneca",
+    "description": "Caneca personalizada de 350ml. Feita de cerâmica de alta qualidade, ela é perfeita para o seu café da manhã, chá da tarde ou qualquer bebida de sua preferência.",
+    "price": 20000,
+    "categoryId": 3,
+    "ownerId": 3
   }
 ]

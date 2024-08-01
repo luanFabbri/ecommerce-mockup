@@ -22,9 +22,10 @@ export const productsConfiguration = (
     const category = categories.find(
       (cat) => cat.ownerId === itemOwnerId && cat.id === itemCategoryId
     );
-    // Retorna o título da categoria se encontrada, caso contrário retorna "Desconhecida"
     return category ? category.title : "Desconhecida";
   };
+
+  // Encontra a description da categoria que corresponde ao ownerId e categoryId do item
   const findCategoryDescription = (
     itemOwnerId: number,
     itemCategoryId: number
@@ -35,7 +36,7 @@ export const productsConfiguration = (
     return category ? category.description : "Desconhecida";
   };
 
-  // Mapeia os itens para a nova interface e adiciona a categoria correspondente
+  // Mapeia os itens para a nova interface e adiciona a categoria/desc correspondente
   const products: ProductListInterface[] = items.map((item) => ({
     id: item.id,
     title: item.title,

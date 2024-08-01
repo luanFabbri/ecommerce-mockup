@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom"; // Importando useLocation
+import { useNavigate, useLocation } from "react-router-dom";
 import UpperMenu from "../../components/upper-menu/upper-menu";
 import {
   fetchCategories,
@@ -16,7 +16,7 @@ interface CategoryInterface {
 }
 
 const InsertProduct: React.FC = () => {
-  const location = useLocation(); // Usando useLocation para obter estado
+  const location = useLocation();
   const productOptions = location.state?.productOptions as ProductListInterface;
 
   const [productName, setProductName] = useState(productOptions?.title || "");
@@ -32,6 +32,7 @@ const InsertProduct: React.FC = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    //TODO - Criar função externa
     const fetchAndSetCategories = async () => {
       const categoryData = await fetchCategories();
       const filteredCategories = categoryData.filter(
@@ -51,12 +52,14 @@ const InsertProduct: React.FC = () => {
     fetchAndSetCategories();
   }, [productOptions]);
 
+  // Função de suporte ao select
   const handleCategoryChange = (
     event: React.ChangeEvent<HTMLSelectElement>
   ) => {
     setSelectedCategoryId(parseInt(event.target.value, 10));
   };
 
+  // TODO - Necessário adicionar as validações
   const handleSubmit = async () => {
     if (selectedCategoryId === null) {
       console.error("Category not selected.");
@@ -68,7 +71,7 @@ const InsertProduct: React.FC = () => {
       description: productDescription,
       price: parseFloat(productPrice.toString()),
       categoryId: selectedCategoryId,
-      ownerId: 1, // Fixed ownerId as per requirement
+      ownerId: 1,
     };
 
     try {

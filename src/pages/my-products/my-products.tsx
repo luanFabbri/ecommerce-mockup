@@ -22,6 +22,9 @@ function MyProducts() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    {
+      /* Transformar em uma função externa */
+    }
     const fetchData = async () => {
       try {
         const fetchedCategories = await fetchCategories(1); // Busca categorias do ownerId = 1

@@ -17,8 +17,9 @@
     width: 340px;
     height: 340px;
     object-fit: contain;
-    border-radius: 8px; /* Adiciona border-radius à imagem para consistência com a caixa */
+    border-radius: 16px; /* Adiciona border-radius à imagem para consistência com a caixa */
     margin-left: 8px;
+    margin-top: 8px;
 }
 
 .product-big-details {
@@ -64,4 +65,9 @@
     background-color: #f4f4f4; /* Cor de fundo opcional */
     margin-left: 8px; /* Espaço entre o contêiner principal e a nova caixa */
     padding: 16px;
+}
+
+.product-big-stock {
+    color: green;
+    font-weight: 500;
 }

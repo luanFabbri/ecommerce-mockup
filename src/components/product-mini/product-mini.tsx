@@ -17,7 +17,7 @@ const ProductMini: React.FC<ProductMiniProps> = ({ product }) => {
   };
 
   const handleAddToCart = () => {
-    // Lógica para adicionar o produto ao carrinho pode ser adicionada aqui
+    // Essa feature será implementada futuramente!
     console.log(`${product.title} adicionado ao carrinho!`);
   };
 
@@ -33,7 +33,7 @@ const ProductMini: React.FC<ProductMiniProps> = ({ product }) => {
         <h2 className="product-title" onClick={handleProductClick}>
           {product.title}
         </h2>
-        <div>⭐⭐⭐⭐⭐</div>
+        <div>⭐⭐⭐⭐⭐</div> {/*Implementar sistema de rating futuramente*/}
         <p className="product-price">{toReal(product.price)}</p>
         <button className="add-to-cart-button" onClick={handleAddToCart}>
           Adicionar ao carrinho

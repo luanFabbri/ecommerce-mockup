@@ -24,11 +24,12 @@ const InsertCategory: React.FC = () => {
   const [isEditing, setIsEditing] = useState<boolean>(!!categoryOptions);
   const navigate = useNavigate();
 
+  //TODO - Fazer tratamento dos dados! Não se pode permitir campos vazios.
   const handleSubmit = async () => {
     const categoryData = {
       title: categoryTitle,
       description: categoryDescription,
-      ownerId: 1, // Fixed ownerId as per requirement
+      ownerId: 1,
     };
 
     try {

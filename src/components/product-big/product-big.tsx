@@ -20,11 +20,12 @@ const ProductBig: React.FC<ProductBigProps> = ({ product }) => {
         />
         <div className="product-big-details">
           <h2 className="product-big-title">{product.title}</h2>
-          <div>⭐⭐⭐⭐⭐</div>
+          <div>⭐⭐⭐⭐⭐</div> {/*Será implementado futuramente!*/}
           <p className="product-big-category">
             Categoria: {product.category} - {product.categoryDescription}
           </p>
           <p className="product-big-price">{toReal(product.price)}</p>
+          <p className="product-big-stock">Em Estoque</p>
           <p className="product-big-description">{product.description}</p>
         </div>
       </div>
@@ -33,8 +34,8 @@ const ProductBig: React.FC<ProductBigProps> = ({ product }) => {
           <div>Produto novo: {toReal(product.price)}</div>
           <div>Entrega: {getTomorrowDate()}</div>
         </div>
-
-        <button className="product-big-button">Adicionar ao carrinho</button>
+        <button className="product-big-button">Adicionar ao carrinho</button>{" "}
+        {/*Será implementado futuramente!*/}
       </div>
     </div>
   );
